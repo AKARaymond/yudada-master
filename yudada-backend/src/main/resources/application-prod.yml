@@ -18,6 +18,15 @@ spring:
     url: jdbc:mysql://sh-cynosdbmysql-grp-lj9icjw4.sql.tencentcdb.com:24300/yudada
     username: root
     password: leiHAOying123
+    datasource:
+      # 多数据源以逗号隔开即可
+      names: yudada
+      yudada:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://sh-cynosdbmysql-grp-lj9icjw4.sql.tencentcdb.com:24300/yudada
+        username: root
+        password: leiHAOying123
   # Redis 配置
   # todo 需替换配置
   #redis:

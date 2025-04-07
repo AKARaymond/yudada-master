@@ -4,6 +4,13 @@
 server:
   port: 8101
   address: 0.0.0.0
+  servlet:
+    session:
+      cookie:
+        max-age: 2592000
+        same-site: none
+        secure: true
+        
 spring:
   # 数据库配置
   datasource:

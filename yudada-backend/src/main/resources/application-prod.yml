@@ -15,7 +15,7 @@ spring:
   # 数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://sh-cynosdbmysql-grp-lj9icjw4.sql.tencentcdb.com:24300/yudada
+    url: jdbc:mysql://sh-cynosdbmysql-grp-20ajs314.sql.tencentcdb.com:23048/yudada
     username: root
     password: leiHAOying123
    

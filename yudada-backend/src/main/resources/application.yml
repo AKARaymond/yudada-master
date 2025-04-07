@@ -60,8 +60,8 @@ cos:
   client:
     accessKey: xxx
     secretKey: xxx
-    region: xxx
-    bucket: xxx
+    region: ap-shanghai
+    bucket: 6169-ai-dati-3gfpygxe8bd18cfa-1353028546
 # 接口文档配置
 knife4j:
   enable: true

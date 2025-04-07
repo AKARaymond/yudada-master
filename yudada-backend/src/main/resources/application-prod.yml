@@ -28,3 +28,6 @@ knife4j:
     enable: true
     username: root
     password: 123456
+# AI 配置
+ai:
+  apiKey: 385e1733caff4a8ea52b868806d63351.I4ASNZfaBxkLG0s3

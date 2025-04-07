@@ -76,4 +76,4 @@ knife4j:
           - com.yupi.yudada.controller
 # AI 配置
 ai:
-  apiKey: 改为自己的 apiKey
+  apiKey: 385e1733caff4a8ea52b868806d63351.I4ASNZfaBxkLG0s3

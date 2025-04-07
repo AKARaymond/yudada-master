@@ -3,6 +3,7 @@
 
 server:
   port: 8101
+  address: 0.0.0.0
 spring:
   # 数据库配置
   datasource:

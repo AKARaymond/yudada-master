@@ -1,57 +1,82 @@
-AI 答题应用平台
+项目简介
+这是一个面向真实业务场景的企业级 AI 答题应用平台，基于 Vue 3 + Spring Boot + Redis + ChatGLM + RxJava + SSE 等前后端主流技术栈构建，实现了从答题应用创建、发布、分享、答题到智能总结的完整闭环。
 
+该平台支持用户快速生成个性化答题应用，提供 AI 驱动的答题体验与自动总结能力，便于分享和传播；管理员具备全面的内容审核与平台运营管理功能，支持多维度的数据统计分析。
 
-## 项目简介
+技术架构
+后端技术栈（Spring Boot）
+核心框架：Spring Boot（主框架）、MyBatis-Plus & MyBatisX（ORM 与代码自动生成）
 
-### 项目介绍
+存储系统：
 
-深入业务场景的企业级实战项目，基于 Vue 3 + Spring Boot + Redis + ChatGLM AI + RxJava + SSE 的 **AI 答题应用平台。**
+MySQL（关系型数据库）
 
-用户可以基于 AI 快速制作并发布多种答题应用，支持检索和分享应用、在线答题并基于评分算法或 AI 得到回答总结；管理员可以审核应用、集中管理整站内容，并进行统计分析。
+Redis（缓存中间件）
 
-## 技术选型
+腾讯云 COS（文件对象存储）
 
-### 后端
+性能与分布式能力：
 
-- Java Spring Boot 开发框架
-- 存储层：MySQL 数据库 + Redis 缓存 + 腾讯云 COS 对象存储
-- MyBatis-Plus 及 MyBatis X 自动生成
-- Redisson 分布式锁
-- Caffeine 本地缓存
-- ⭐️ 基于 ChatGLM 大模型的通用 AI 能力
-- ⭐️ RxJava 响应式框架 + 线程池隔离实战 
-- ⭐️ SSE 服务端推送
-- ⭐️ Shardingsphere 分库分表
-- ⭐️ 幂等设计 + 分布式 ID 雪花算法
-- ⭐️ 多种设计模式
-- ⭐️ 多角度项目优化：性能、稳定性、成本优化、产品优化等
+Redisson 分布式锁 + 雪花算法（ID 生成）
 
+ShardingSphere 分库分表架构
 
+Caffeine 本地缓存（热点数据优化）
 
-### 前端
+异步与响应式：
 
-#### Web 网页开发
+RxJava 响应式编程框架
 
-- Vue 3 
-- Vue-CLI 脚手架
-- Axios 请求库
-- Arco Design 组件库
-- 前端工程化：ESLint + Prettier + TypeScript
-- 富文本编辑器
-- QRCode.js 二维码生成
-- ⭐️ Pinia 状态管理
-- ⭐️ OpenAPI 前端代码生成
+自定义线程池隔离机制
 
-#### 小程序开发
+SSE（Server-Sent Events）实现服务端消息推送
 
-- React
-- Taro 跨端开发框架
-- Taro UI 组件库
+AI 能力集成：
 
-### 开发工具
+集成 ChatGLM 大语言模型 实现答题总结与智能对话
 
-- 前端 IDE：JetBrains WebStorm
-- 后端 IDE：JetBrains IDEA
-- CodeGeeX 智能编程助手
+高可用设计：
 
+幂等性保障机制
 
+多种设计模式应用（如策略模式、责任链模式）
+
+多维优化策略（性能、稳定性、成本、产品体验）
+
+前端技术栈（Vue + Taro）
+Web 前端（Vue 3）
+框架与工具：
+
+Vue 3 + Vue CLI
+
+TypeScript + ESLint + Prettier（前端工程化）
+
+组件与状态管理：
+
+Arco Design UI 组件库
+
+Pinia 状态管理
+
+Axios（请求库）
+
+功能模块：
+
+富文本编辑器（答题配置）
+
+QRCode.js 二维码生成
+
+OpenAPI 自动生成 API 接口代码
+
+小程序端（Taro + React）
+Taro 跨端开发框架（支持微信小程序、H5）
+
+React 框架构建
+
+Taro UI 组件库
+
+开发工具
+JetBrains WebStorm（前端开发）
+
+JetBrains IntelliJ IDEA（后端开发）
+
+CodeGeeX（智能编程助手）

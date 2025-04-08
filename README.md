@@ -13,7 +13,7 @@ AI 答题应用平台
 
 ### 后端
 
-- Java Spring Boot 开发框架（万用后端模板）
+- Java Spring Boot 开发框架
 - 存储层：MySQL 数据库 + Redis 缓存 + 腾讯云 COS 对象存储
 - MyBatis-Plus 及 MyBatis X 自动生成
 - Redisson 分布式锁
